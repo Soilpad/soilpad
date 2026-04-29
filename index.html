@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    :root {
+      background-color: black;
+  --primary-color: #2d5a27; /* Earthy Green */
+  --secondary-color: #4a5568; /* Professional Gray */
+  --accent-color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  width: max-content;
+}
+
+/* The Icon Box */
+.logo-icon {
+  position: relative;
+  width: 40px;
+  height: 45px;
+  background-color: var(--primary-color);
+  border-radius: 6px 15px 6px 6px; /* Folded corner look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* White "S" inside the icon */
+.icon-s {
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  z-index: 2;
+}
+
+/* Brand Text Styling */
+.logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.brand-soil {
+  color: var(--primary-color);
+}
+
+.brand-pad {
+  color: var(--secondary-color);
+  font-weight: 400; /* Lighter weight for modern contrast */
+}
+
+/* Simple Hover Effect */
+.logo-container:hover .logo-icon {
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+  background-color: #3d7a35;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="logo-container">
+  <div class="logo-icon">
+    <div class="icon-page"></div>
+    <span class="icon-s">S</span>
+  </div>
+  <div class="logo-text">
+    <span class="brand-soil">Soil</span><span class="brand-pad">pad</span>
+  </div>
+</div>
+
+</body>
+
+  </html>
